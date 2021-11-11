@@ -14,9 +14,6 @@ let sushiRecipe = function () {
     console.log('Add water');
     console.log('Mix together');
 }
-sushiRecipe(1);
-sushiRecipe(2);
-sushiRecipe(3);
 //Change code for sushi 3x & pizza 2x
 sushiRecipe(1);
 sushiRecipe(2);
