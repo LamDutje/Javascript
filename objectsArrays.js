@@ -1,22 +1,23 @@
 //Objects
-let person = {
-    name: 'Lam',
+const person = {
+    name: "Lam",
     age: 29,
+    evaluations: [7, 10, 9],
 };
+
+// entire object
 console.log(person);
+
+// dot notation
 console.log(person.name);
 console.log(person.age);
-/////////////////////////////////////////////////////
-person.name = 'Lam';
-person.age = 29;
-/////////////////////////////////////////////////////
-let selection = 'name';
-person[selection] = 'Lam';
-console.log(person.name);
-/////////////////////////////////////////////////////
-let evaluations = [7, 10, 9];
-console.log(evaluations);
-//Value = 7, 10, 9
+
+// bracket notation
+console.log(person["name"]);
+console.log(person["age"]);
+
+// extra key-value pair
+console.log(person.evaluations);
 /////////////////////////////////////////////////////
 //Arrays
 let array = ['green', 'blue', 'red'];
@@ -76,7 +77,7 @@ const catBreeds = [{
     }
 }
 ]
-console.log(catBreeds[2]);
+console.log(catBreeds[2].name);
 console.log(catBreeds[0].energy_level);
 console.log(catBreeds[1].temperament[0]);
 console.log(catBreeds[2].temperament[4]);
