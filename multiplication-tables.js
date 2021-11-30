@@ -1,14 +1,14 @@
 // Multiplication tables
+const multiplier = 9;
 for (let i = 0; i <= 10; i++) {
-    console.log(i * 9);
+    let result = multiplier * i;
+    console.log(multiplier + " * " + i + " = " + result);
 }
 
-// 1 x 9 = 9 
-// 2 x 9 = 18 
-// 3 x 9 = 27 
-// etc...
-
-// Bonus 
-for (let i = 1; i <= 10; i++) {
-    console.log(i * 1);
+// Bonus
+for (let multiplier = 0; multiplier <= 10; multiplier++) {
+    for (let i = 0; i <= 10; i++) {
+        let result = multiplier * i;
+        console.log(multiplier + " * " + i + " = " + result);
+    }
 }

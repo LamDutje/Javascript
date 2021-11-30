@@ -9,10 +9,10 @@ function assignGrade(score) {
     } else if (score > 65) {
         return "D";
     } else {
-        return "E";
+        return "F";
     }
 }
 
 for (let i = 60; i <= 100; i++) {
-    console.log(`For scoring ${(100)} points, you get an ${assignGrade}`);
+    console.log("Voor " + i + " punten, krijg je een " + assignGrade(i));
 }
