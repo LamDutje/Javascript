@@ -1,13 +1,22 @@
-console.log("Hello Winc Academy students");
-//This is a large sum
 
-/*
-let num1 = 1230941 * 1823794;
-console.log(num1);
+const attachEventToAlertButton = function() {
+    const alertButton = document.getElementById("alert-button");
+    alertButton.addEventListener("click", function() {
+        alert("Hello World!");
+    });
+};
 
-let num2 = 637263 / 54;
-console.log(num2);
-*/
+const toggleColor = function() {
+    const bodyElement = document.body;
+    bodyElement.classList.toggle("red-background");
+};
 
-//Do not see comment because terminal doesnt show comment/its commented out.
-//Do not see comment because the whole block is now commented out.
+const attachEventToChangeColorButton = function() {
+    const changeColorButton = document.getElementById("change-background-button");
+    changeColorButton.addEventListener("click", function() {
+        toggleColor();
+    });
+};
+
+attachEventToAlertButton();
+attachEventToChangeColorButton();
