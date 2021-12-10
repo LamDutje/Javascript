@@ -2,16 +2,34 @@
 <html>
 
 <head>
-  <title>Practice Event Handlers</title>
-  <script defer src="script.js"></script>
+  <title>Color Toggle</title>
+  <link rel="stylesheet" href="resetstyle.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="body" class="blue-background">
-  <button id="alert-button" type="button" class="btn-alert">Alert Me!</button>
-  <button id="change-background-button" type="button" class="btn-alert">
-    Change Background
-  </button>
+<body id="body" class="grey-background">
+
+  <nav class="nav-main">
+    <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+    <ul>
+      <li><a href="#">Color</a></li>
+      <li><a href="#">Toggle</a></li>
+      <li><a href="#">Final</a></li>
+      <li><a href="#">Asignment</a></li>
+    </ul>
+  </nav>
+
+  <aside class="nav-sidebar">
+    <ul>
+      <li class="grey-background"><a onclick="chBackcolor('grey');" href="#">Home</a></li>
+      <li class="red-background"><a onclick="chBackcolor('red');" href="#">Red</a></li>
+      <li class="orange-background"><a onclick="chBackcolor('orange');" href="#">Orange</a></li>
+      <li class="purple-background"><a onclick="chBackcolor('purple');" href="#">Purple</a></li>
+      <li class="green-background"><a onclick="chBackcolor('green');" href="#">Green</a></li>
+    </ul>
+  </aside>
+
 </body>
+<script src="script.js"></script>
 
 </html>
